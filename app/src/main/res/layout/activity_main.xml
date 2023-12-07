@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather"
+        android:textSize="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/Search_Edt_Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="#7C7A7A"
+        android:hint="Search for a city"
+        android:textColor="#FEFCFC"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edt_txt_style"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
